@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Sorteio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family: "Roboto", sans-serif;
+           
+            
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            position: fixed;
+       
+        }
+        section{
+            position: relative;
+            top:20%;
+            height: 33vh;
+           
+        }
+        
+        .img-fluid{
+            display: block;
+            position: relative;
+            transform: translateY(-10%);
+            margin: 0 auto;
+            max-width: 80%;
+            max-height: 35vh;
+            width: auto;
+            height: auto;    
+        }
+        p{
+            position: relative;
+            line-height: 80px;
+            font-size: 36px;
+            top:27%;
+            color: #FFF;
+        }
+        .result-dado{
+           display: flex;
+            color: black;
+            align-items: center;
+            justify-content: center;
+          
+        }
+
+        .inputs-random{
+            position: relative;
+            width: 50vw;
+            height: 25vh;
+            top:25%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto ; 
+            gap:100px;
+            
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .form-control{
+            position: relative;
+            display: block;
+            width: 120%;
+            height: 69px;
+            margin: 0 auto;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            background: rgba(255, 255, 255, 0.25);
+            padding: 20px;
+            font-size: 24px;
+            color: #FFF;
+            right: 8%;
+        }
+        .form-control:hover,.form-control:focus{
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            background: rgba(255, 255, 255, 0.25);
+            color: #FFF;
+        }
+
+        .button-principal{
+            position: relative;
+            top: 5%;
+            height: 15vh;
+        }
+        
+        .btn-outline-success{
+            position: relative;
+            display: block;
+            width: 342px;
+            height: 72px;
+            font-size: 32px;
+            margin: 0 auto;
+            box-shadow: 0px 18px 40px 0px rgba(40, 167, 69, 0.35);
+            top: 50%;
+        }
+
+        .modal-dialog{
+            position: relative;
+            top:88%;
+        }
+        .modal-content{
+            
+            color: #FFF;
+            width: 230px; 
+            height: 70px;
+            display: flex;
+            margin: 0 auto;
+            line-height: -30px;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            background-color: rgba(40, 167, 69, 0.4);
+           
+        }
+       
+    
+        @media screen and (max-width:1300px) {
+            .img-fluid {
+                top: 10%;
+                max-width: 60%;
+                max-height: 100%;
+                position: relative; 
+            }
+            .form-control{
+                width: 130%;
+            }
+            
+        }
+
+        @media screen and (max-width:1050px) {
+            p{
+                
+                line-height: 80px;
+                font-size: 28px;
+                top:25%;
+            }
+
+            .inputs-random{
+                width: 60vw;
+                gap: 150px;
+            }
+
+            .form-control{
+                width: 150%;
+                gap: 200px;
+                right:25%;
+                top:-10%
+            }
+
+            .btn-outline-success{
+                width: 30vw;
+                top:30%;
+            }
+            #alert-d{
+                width: 170% !important;
+                left: -35% !important;
+            }
+           
+        }
+
+        @media screen and (max-width:700px) {
+            .img-fluid {
+                max-width: 80%;
+                max-height: 100%;
+            }
+
+            p{   
+                top:23%;
+            }
+            
+            .form-control{
+                width: 180%;
+                height:6vh;
+                right: 35%;
+                top:-22%                
+            }
+            .btn-outline-success{
+                width: 40vw;
+                top:1%;
+            }
+            #alert-d{
+                width: 150% !important;
+                left: -28% !important;
+            }
+
+           
+        }
+
+
+
+        @media screen and (max-width:500px) {
+            .img-fluid {
+                max-width: 80%;
+                max-height: 100%;
+            }
+
+            p{
+                
+                line-height: 80px;
+                font-size: 24px;
+                top:17%;
+            }
+
+            .form-control{
+                width: 280%;
+                height:6vh;
+                right: 100%;
+                top:-40%
+                
+            }
+
+            .btn-outline-success{
+                width: 40vw;
+                height: 10vh;
+                top:-30%;
+            }
+            #alert-d{
+                width: 80% !important;
+                left: 10% !important;
+            }
+
+        }
+
+        @media screen and (max-width:430px) {
+
+            .img-fluid {
+                top:25%;
+            }
+
+            p{
+            
+                line-height: 80px;
+                font-size: 24px;
+                top:19%;
+            }
+
+            .form-control{
+                width: 350%;
+                height:6vh;
+                right: 120%;
+                top:-40%
+                
+            }
+
+            .btn-outline-success{
+                width: 50vw;
+                height: 8vh;
+                top:-30%;
+            }
+
+        }
+</style>
+<body>
+    <main>
+        <section>
+            <img src="./assets/sort 1.png" class="img-fluid" alt="Imagem responsiva">
+        </section>
+          <p class="text-center">Sortear um número</p>
+        <section class="inputs-random">
+            <div class="mb-3">
+                <input type="number" class="form-control" id="number" placeholder="Entre">
+            </div>
+            <div class="mb-3">
+                <input type="number" class="form-control" id="number1" placeholder="e">
+            </div>
+        </section>
+
+        <div class="button-principal">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target=".bd-example-modal-sm" >Sortear</button>
+            <p class="result-label"></p>
+        </div>
+    </main>
+         <!-- Modal -->
+         <div class="modal fade bd-example-modal-sm" id="modal-pai" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"  style="overflow: hidden;">
+           <div class="modal-dialog modal-sm" >
+             <div class="modal-content" style="display: none;">
+               ...
+             </div>
+             <div class="alert alert-danger d-flex justify-content-center "  id="alert-d"  role="alert" style=" left: -45%; width: 200%; height: auto;" hidden="true"> 
+                <b>Erro: o valor minimo é maior que o valor maximo, tente novamente!!</b>
+              </div>
+           </div>
+         </div>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <script src="./script.js"></script>
+   </body>
+   </html>
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52a4fd924725483e0fd076e732e116b9a34fe6b1
