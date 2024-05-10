@@ -11,6 +11,7 @@ button.addEventListener("click", function() {
   if (min<max){
     const random = Math.floor(Math.random()*(max - min + 1) + min);
     alert.style.visibility="hidden"
+    alert.style.display="none"
 
     let label = document.querySelector(".modal-content")
     label.style.display='block'
