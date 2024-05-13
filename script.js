@@ -17,7 +17,15 @@ button.addEventListener("click", function() {
     label.style.display='block'
     label.innerHTML=`<br>Numero sorteado: ${random}`
   }
-  else{
+  
+if (min ==="" || max ==="") {
+     document.querySelector(".modal-content").style.display="none"
+     alert.style.display='block'
+     alert.innerHTML="Erro: Campos Obrigatorios não preenchidos, Tente Novamente"
+     alert.style.visibility="visible"
+}
+    
+else{
     document.querySelector(".modal-content").style.display="none"
     alert.style.display='block'
     alert.style.visibility="visible"
