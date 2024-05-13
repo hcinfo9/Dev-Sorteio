@@ -16,10 +16,19 @@ button.addEventListener("click", function() {
     label.style.display='block'
     label.innerHTML=`<br>Numero sorteado: ${random}`
   }
+  else if (min ===0 || max ===0){
+    document.querySelector(".modal-content").style.display="none"
+    alert.style.visibility="visible"
+    alert.style.display='block'
+    alert.style.visibility="visible"
+    alert.innerHTML="<b>Erro: Campos vazios, tente novamente</b>"
+  }
   else{
+    
     document.querySelector(".modal-content").style.display="none"
     alert.style.display='block'
     alert.style.visibility="visible"
+    alert.innerHTML="<b>Erro: o valor minimo é maior que o valor maximo, tente novamente!!</b>"
   }
 })
 
