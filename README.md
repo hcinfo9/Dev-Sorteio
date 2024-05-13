@@ -33,7 +33,7 @@ Dev Sorteio é uma aplicação web simples desenvolvida para sortear números al
 Um navegador web moderno, como Google Chrome, Mozilla Firefox, Safari, ou Microsoft Edge.
 Conexão com a internet para carregar recursos externos, como o framework Bootstrap.<br><br>
 
-<h3>Executando o Projeto</h3>
+<h3>Executando o Projeto:</h3>
 
 Para executar a aplicação localmente, siga estas etapas:
 
@@ -42,13 +42,13 @@ Para executar a aplicação localmente, siga estas etapas:
     <img src="./assets/Clone.png"><br><br>
 </li>
   <li>Abra o arquivo index.html em seu navegador web preferido.</li>
-  <li>AInsira o valor mínimo e máximo para o sorteio nos campos correspondentes.</li>
+  <li>Insira o valor mínimo e máximo para o sorteio nos campos correspondentes.</li>
   <li>Abra o arquivo index.html em seu navegador web preferido.</li>
   <li>Clique no botão "Sortear" para iniciar o sorteio.</li>
   <li>Outra forma de acessar o projeto é clicando em "Visite este Projeto" no começo na pagina</li>
 </ul><br><br>
 
-<h2 id="colab">🤝 Colaboradores</h2>
+<h2 id="colab">🤝 Colaboradores:</h2>
 
 Um obrigado especial aos colaboradores do Projeto.
 
